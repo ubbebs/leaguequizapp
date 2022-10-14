@@ -1,0 +1,27 @@
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'frizFont', sans-serif;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding: 15px;
+    font-size: 3em;
+    background-image: linear-gradient(#f5c160, #836609);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0 0 25px rgba(255, 187, 0, 0.5));
+}
+
+.n-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

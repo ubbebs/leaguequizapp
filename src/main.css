@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    min-height: 100vh;
+    background-image: url('https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc28d43095579c8b5/5d87c24e8d8a3163705e3070/summonersrift.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'frizFont', sans-serif;
+}
+
+@font-face {
+    font-family: 'frizFont';
+    src: url('./fonts/Friz.ttf');
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: initial;
+    text-decoration: none;
+}

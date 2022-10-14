@@ -1,0 +1,13 @@
+.apick-results {
+    position: absolute;
+    bottom: 100%;
+}
+
+.apick-results p {
+    background-color: white;
+}
+
+.apick-answers {
+    display: flex;
+    flex-direction: column-reverse;
+}

@@ -1,0 +1,21 @@
+.sp-img {
+    height: 179px;
+    width: 313px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-width: 5px;
+    box-sizing: initial;
+}
+
+.sp-win-splashart {
+    width: 100%;
+    border: 3px solid;
+    border-color: #666;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-sizing:content-box;
+}
+
+.sp-win-splashart:hover {
+    border-color: #fff;
+}
