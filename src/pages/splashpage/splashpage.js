@@ -26,7 +26,7 @@ export default function SplashPage() {
         }
         //if splash img isn't in local storage, and not in global state (direct link) => fetch data of rolled champion and set splash img
         else if (!localStorage.getItem('localRolledSplashImg') && !stateContext.stateValue.rolledSplashImg) {
-            fetch(`http://ddragon.leagueoflegends.com/cdn/12.19.1/data/en_US/champion/${stateContext.stateValue.rolledSplashChampion.id}.json`)
+            fetch(`https://ddragon.leagueoflegends.com/cdn/12.19.1/data/en_US/champion/${stateContext.stateValue.rolledSplashChampion.id}.json`)
             .then(response => response.json())
             .then(data => stateContext.stateDispatch({ type: ACTIONS.SET_ROLLED_SPLASH_IMG, payload: { rolledSplashImg: data.data[stateContext.stateValue.rolledSplashChampion.id].skins[Math.floor(Math.random() * (data.data[stateContext.stateValue.rolledSplashChampion.id].skins.length - 1))] } }))
             .catch(console.error)

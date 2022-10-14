@@ -25,7 +25,7 @@ export default function AbilityPage() {
         } 
         //if splash img isn't in local storage, and not in global state (direct link) => fetch data of rolled champion and set splash img
         else if (!localStorage.getItem('localRolledAbilityImg') && !stateContext.stateValue.rolledAbilityImg) {
-            fetch(`http://ddragon.leagueoflegends.com/cdn/12.19.1/data/en_US/champion/${stateContext.stateValue.rolledAbilityChampion.id}.json`)
+            fetch(`https://ddragon.leagueoflegends.com/cdn/12.19.1/data/en_US/champion/${stateContext.stateValue.rolledAbilityChampion.id}.json`)
             .then(response => response.json())
             .then(data => stateContext.stateDispatch({ type: ACTIONS.SET_ROLLED_ABILITY_IMG, payload: { rolledAbilityImg: data.data[stateContext.stateValue.rolledAbilityChampion.id].spells[Math.floor(Math.random() * data.data[stateContext.stateValue.rolledAbilityChampion.id].spells.length)] } }))
             .catch(console.error)

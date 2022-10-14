@@ -16,7 +16,7 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   useEffect(() => {
-    fetch('http://ddragon.leagueoflegends.com/cdn/12.19.1/data/en_US/champion.json')
+    fetch('https://ddragon.leagueoflegends.com/cdn/12.19.1/data/en_US/champion.json')
     .then(response => response.json())
     .then(data => dispatch({ type: ACTIONS.SET_CHAMPIONS, payload: { champions: data.data } }))
     .catch(console.error)
